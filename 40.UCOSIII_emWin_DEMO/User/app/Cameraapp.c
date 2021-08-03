@@ -98,8 +98,11 @@ void cbCameraWin(WM_MESSAGE * pMsg)
 			OS_INFO("Cameraapp delete\n");
 			DisableCamera();
 			Flag_ICON108=0;
-			UserApp_Flag = 0;		
-			ILI9341_GramScan(1);
+			UserApp_Flag = 0;
+      if(lcdid == LCDID_ILI9341)  //使用 ILI9341 时需要
+      {
+        ILI9341_GramScan(1);
+      }
 			tpad_flag=0;
 			break;
 		case WM_PAINT:
