@@ -25,6 +25,7 @@
 static  OS_TCB	 AppTaskStartTCB;		     //定义任务控制块
 static  OS_TCB   AppTaskUpdateTCB;
 static  OS_TCB   AppTaskUserappTCB;
+OS_TCB   AppTaskKeypadTCB;
 /*
 *********************************************************************************************************
 *                                                STACKS

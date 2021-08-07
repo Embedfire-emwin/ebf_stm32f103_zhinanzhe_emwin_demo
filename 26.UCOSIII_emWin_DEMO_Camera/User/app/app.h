@@ -24,6 +24,7 @@ extern GUI_FONT  XBF_Font;
 
 /************ KeyInput **************/
 void keypadapp(uint16_t message,uint8_t IsEdit);
+extern OS_TCB   AppTaskKeypadTCB;
 extern uint8_t  keypadflag;
 extern WM_HWIN  KEYBOARD;
 /************************************/
